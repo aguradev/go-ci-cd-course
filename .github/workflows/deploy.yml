@@ -1,0 +1,13 @@
+name: test,build,deploy app
+# set trigger actions to active
+on:
+  push:
+    branches:
+      - master
+# what doing job execute when actions
+jobs:
+  build-docker:
+    name: build and push to docker registry
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
