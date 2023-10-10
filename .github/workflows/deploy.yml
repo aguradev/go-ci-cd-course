@@ -37,7 +37,3 @@ jobs:
 
       - name: push docker
         run: docker push agungbhaskara/ci-cd-project:latest
-  deploy:
-    name: deployment
-    runs-on: ubuntu-latest
-    needs: build-docker
