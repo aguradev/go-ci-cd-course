@@ -1,9 +1,5 @@
-****# Golang - CI/CD Learn
+# Golang - CI/CD Learn
 
-### connect server
+### endpoint url
 
-- sudo ssh -i "compute-service-key.pem" ec2-user@ec2-54-151-188-213.ap-southeast-1.compute.amazonaws.com
-
-### run container in server
-
-- docker run -d -p 1234:1234 --name compute-service-app agungbhaskara/lms-belajar-docker:1.4
+```ec2-54-151-188-213.ap-southeast-1.compute.amazonaws.com:1234/```

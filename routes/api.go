@@ -16,7 +16,7 @@ func Route() {
 	m.LogMiddleware(e)
 	e.GET("/", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, map[string]interface{}{
-			"message": "Selamat datang di APIku silakan acces",
+			"message": "Selamat datang di APIku",
 		})
 	})
 
