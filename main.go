@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// configs.LoadEnv()
+	configs.LoadEnv()
 	configs.LoadDatabase()
 	routes.Route()
 }
