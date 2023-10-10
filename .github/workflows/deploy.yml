@@ -63,10 +63,10 @@ jobs:
             docker rm go-ci-cd-app || true
 
             docker run -d -p 1234:1234 --name go-ci-cd-app \
-              --e DB_USER=${DB_USER} \
-              --e DB_PASSWORD=${DB_PASSWORD} \
-              --e DB_HOST=${DB_HOST} \
-              --e DB_PORT=${DB_PORT} \
-              --e DB_NAME=${DB_NAME} \
-              --e SECRET_KEY=${SECRET_KEY} \
+              -e DB_USER=${DB_USER} \
+              -e DB_PASSWORD=${DB_PASSWORD} \
+              -e DB_HOST=${DB_HOST} \
+              -e DB_PORT=${DB_PORT} \
+              -e DB_NAME=${DB_NAME} \
+              -e SECRET_KEY=${SECRET_KEY} \
               agungbhaskara/ci-cd-project:latest
